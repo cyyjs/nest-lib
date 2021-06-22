@@ -2,7 +2,7 @@
  * @Author: cyy
  * @Date: 2021-06-22 16:01:25
  * @LastEditors: cyy
- * @LastEditTime: 2021-06-22 16:57:21
+ * @LastEditTime: 2021-06-22 18:23:28
  * @Description: app创建封装
  */
 import { NestFactory } from '@nestjs/core';
@@ -26,7 +26,7 @@ export interface ApplicationOptions {
   }
 }
 
-export class NestFactoryStatic {
+export class CNestFactoryStatic {
   public async create<T extends INestApplication = INestApplication>(
     module: any,
     options?: ApplicationOptions,
@@ -63,4 +63,4 @@ export class NestFactoryStatic {
   }
 }
 
-export const CNestFactory = new NestFactoryStatic()
+export const CNestFactory = new CNestFactoryStatic()
