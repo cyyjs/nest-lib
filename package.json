@@ -1,0 +1,27 @@
+{
+  "name": "@cyyjs/nestjs",
+  "version": "0.0.0",
+  "description": "nestjs lib",
+  "main": "dist/core/index.js",
+  "author": "cyyjs <cyyjs@cyyjs.top>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "./scripts/build.sh"
+  },
+  "files": ["dist"],
+  "devDependencies": {
+    "@nestjs/testing": "^7.6.18",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.4",
+    "webpack": "^5.40.0"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^7.6.18",
+    "@nestjs/core": "^7.6.18",
+    "@nestjs/swagger": "^4.8.1",
+    "express": "^4.17.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.1.0"
+  }
+}
