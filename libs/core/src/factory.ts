@@ -2,7 +2,7 @@
  * @Author: cyy
  * @Date: 2021-06-22 16:01:25
  * @LastEditors: cyy
- * @LastEditTime: 2021-06-22 18:23:28
+ * @LastEditTime: 2021-07-14 18:46:54
  * @Description: app创建封装
  */
 import { NestFactory } from '@nestjs/core';
@@ -29,7 +29,17 @@ export interface ApplicationOptions {
 export class CNestFactoryStatic {
   public async create<T extends INestApplication = INestApplication>(
     module: any,
-    options?: ApplicationOptions,
+    options: ApplicationOptions = {
+      filters: {
+        exception: true
+      },
+      interceptors: {
+        result: true,
+        timeout: {
+          time: 5000
+        }
+      }
+    },
   ): Promise<T> {
     const app =await NestFactory.create<T>(module, options?.applicationOptions)
      // 全局校验管道配置
@@ -40,7 +50,10 @@ export class CNestFactoryStatic {
         ...options?.validationPipeOptions
       })
     )
-    setupSwagger(app, options?.swaggerOptions)
+    
+    if (options?.swaggerOptions) {
+      setupSwagger(app, options?.swaggerOptions)
+    }
 
     // 全局异常过滤器
     const filters = []
