@@ -8,6 +8,14 @@
   "scripts": {
     "build": "./scripts/build.sh"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyyjs/nest-lib.git"
+  },
+  "keywords": [
+    "nestjs",
+    "nest"
+  ],
   "files": [
     "dist"
   ],

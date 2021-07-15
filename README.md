@@ -52,13 +52,13 @@ bootstrap();
 
 ```json
 {
-  filters: {
-    exception: true
+  "filters": {
+    "exception": true
   },
-  interceptors: {
-    result: true,
-    timeout: {
-      time: 5000
+  "interceptors": {
+    "result": true,
+    "timeout": {
+      "time": 5000
     }
   }
 }
@@ -69,7 +69,7 @@ bootstrap();
 使用 jwt授权
 
 ```ts
-import { AuthModule, RolesGuard } from '@cyyjs/nestjs/auth'
+import { AuthModule, RolesGuard } from '@cyyjs/nestjs/dist/auth'
 @Module({
   imports: [
     AuthModule.register({
