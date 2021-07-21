@@ -1,4 +1,5 @@
-import { HttpService, Inject, Injectable, UnauthorizedException } from '@nestjs/common';
+import { Inject, Injectable, UnauthorizedException } from '@nestjs/common';
+import { HttpService } from '@nestjs/axios'
 import { AUTH_MODULE_OPTIONS } from './auth.contents';
 import { AuthModuleOptions } from './auth.interfaces';
 
