@@ -25,7 +25,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           
       - run: npm install
-      - run: npm i @nestjs/cli -g
-      - run: npm publish
+      - run: lerna bootstrap
+      - run: lerna publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
