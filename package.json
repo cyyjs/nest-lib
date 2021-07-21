@@ -1,8 +1,8 @@
 {
   "name": "@cyyjs/nest",
-  "version": "1.0.0-rc1",
+  "version": "1.0.0-rc2",
   "description": "nestjs lib",
-  "main": "dist",
+  "main": "dist/",
   "author": "cyyjs <cyyjs@cyyjs.top>",
   "license": "MIT",
   "scripts": {

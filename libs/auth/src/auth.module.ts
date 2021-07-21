@@ -1,4 +1,5 @@
-import { DynamicModule, HttpModule, Module } from '@nestjs/common';
+import { DynamicModule, Module } from '@nestjs/common';
+import { HttpModule} from '@nestjs/axios'
 import { PassportModule } from '@nestjs/passport';
 import { AUTH_MODULE_OPTIONS } from './auth.contents';
 import { AuthModuleOptions } from './auth.interfaces';
