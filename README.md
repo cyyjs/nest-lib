@@ -8,19 +8,19 @@
 - [x] 全局验证管道
 - [x] auth授权
 
-## 安装
+### 安装
 
 ```bash
-yarn add @cyyjs/nest
+yarn add @cyyjs/nestjs-core
 ```
 
-## 使用
+### 使用
 
 ```ts
 // main.ts
 
 import { AppModule } from './app.module';
-import { CNestFactory } from '@cyyjs/nest/core'
+import { CNestFactory } from '@cyyjs/nestjs-core'
 
 async function bootstrap() {
   const app = await CNestFactory.create(AppModule, {
@@ -64,12 +64,18 @@ bootstrap();
 }
 ```
 
-## auth
+### auth
 
 使用 jwt授权
+### 安装
+
+```bash
+yarn add @cyyjs/nestjs-auth
+```
+
 
 ```ts
-import { AuthModule, RolesGuard } from '@cyyjs/nest/auth'
+import { AuthModule, RolesGuard } from '@cyyjs/nestjs-auth'
 @Module({
   imports: [
     AuthModule.register({
