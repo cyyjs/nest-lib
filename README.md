@@ -11,7 +11,7 @@
 ## 安装
 
 ```bash
-yarn add @cyyjs/nestjs
+yarn add @cyyjs/nest
 ```
 
 ## 使用
@@ -20,7 +20,7 @@ yarn add @cyyjs/nestjs
 // main.ts
 
 import { AppModule } from './app.module';
-import { CNestFactory } from '@cyyjs/nestjs'
+import { CNestFactory } from '@cyyjs/nest/core'
 
 async function bootstrap() {
   const app = await CNestFactory.create(AppModule, {
@@ -69,7 +69,7 @@ bootstrap();
 使用 jwt授权
 
 ```ts
-import { AuthModule, RolesGuard } from '@cyyjs/nestjs/dist/auth'
+import { AuthModule, RolesGuard } from '@cyyjs/nest/auth'
 @Module({
   imports: [
     AuthModule.register({

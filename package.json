@@ -1,12 +1,15 @@
 {
-  "name": "@cyyjs/nestjs",
+  "name": "@cyyjs/nest",
   "version": "1.0.0",
   "description": "nestjs lib",
-  "main": "dist/core/index.js",
+  "main": "dist",
   "author": "cyyjs <cyyjs@cyyjs.top>",
   "license": "MIT",
   "scripts": {
     "build": "./scripts/build.sh"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
