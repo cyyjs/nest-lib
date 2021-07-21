@@ -1,11 +1,12 @@
 {
   "name": "@cyyjs/nest",
-  "version": "1.0.0",
+  "version": "1.0.0-rc1",
   "description": "nestjs lib",
   "main": "dist",
   "author": "cyyjs <cyyjs@cyyjs.top>",
   "license": "MIT",
   "scripts": {
+    "prepublish": "yarn build",
     "build": "./scripts/build.sh"
   },
   "publishConfig": {
