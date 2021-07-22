@@ -31,6 +31,6 @@ jobs:
           
       - run: npm install
       - run: lerna bootstrap
-      - run: echo "y" | lerna publish --yes
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: echo "y" | lerna publish --yes --legacy-auth ${{ secrets.NPM_TOKEN }}
+#         env:
+#           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
