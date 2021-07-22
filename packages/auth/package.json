@@ -1,6 +1,6 @@
 {
   "name": "@cyyjs/nestjs-auth",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "nestjs auth",
   "main": "dist/",
   "author": "cyyjs <cyyjs@cyyjs.top>",

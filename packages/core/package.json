@@ -1,6 +1,6 @@
 {
   "name": "@cyyjs/nestjs-core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "nestjs core",
   "main": "dist/",
   "author": "cyyjs <cyyjs@cyyjs.top>",
