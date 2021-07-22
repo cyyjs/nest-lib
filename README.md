@@ -1,5 +1,5 @@
 ## nestjs 封装库
-
+[![NPM Publish](https://github.com/cyyjs/nest-lib/actions/workflows/npm_publish.yml/badge.svg)](https://github.com/cyyjs/nest-lib/actions/workflows/npm_publish.yml)
 ### 封装内容
 
 - [x] 异常过滤器
